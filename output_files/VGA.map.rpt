@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Tue Nov 28 19:27:33 2017
+Tue Nov 28 21:14:31 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -66,13 +66,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 28 19:27:33 2017       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 28 21:14:31 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGA                                         ;
 ; Top-level Entity Name           ; VGA                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 446                                         ;
+; Total registers                 ; 447                                         ;
 ; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 3,000                                       ;
@@ -229,16 +229,16 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 596       ;
+; Estimate of Logic utilization (ALMs needed) ; 620       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 836       ;
-;     -- 7 input functions                    ; 7         ;
-;     -- 6 input functions                    ; 316       ;
-;     -- 5 input functions                    ; 174       ;
-;     -- 4 input functions                    ; 123       ;
-;     -- <=3 input functions                  ; 216       ;
+; Combinational ALUT usage for logic          ; 865       ;
+;     -- 7 input functions                    ; 8         ;
+;     -- 6 input functions                    ; 334       ;
+;     -- 5 input functions                    ; 165       ;
+;     -- 4 input functions                    ; 119       ;
+;     -- <=3 input functions                  ; 239       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 446       ;
+; Dedicated logic registers                   ; 447       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 49        ;
 ; Total MLAB memory bits                      ; 0         ;
@@ -247,8 +247,8 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 430       ;
-; Total fan-out                               ; 5369      ;
+; Maximum fan-out                             ; 431       ;
+; Total fan-out                               ; 5487      ;
 ; Average fan-out                             ; 3.88      ;
 +---------------------------------------------+-----------+
 
@@ -258,25 +258,25 @@ agreement for further details.
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name         ; Library Name ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
-; |VGA                                              ; 836 (0)             ; 446 (0)                   ; 3000              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
+; |VGA                                              ; 865 (0)             ; 447 (0)                   ; 3000              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
 ;    |Ram_1:memory|                                 ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory                                                                ; Ram_1               ; work         ;
 ;       |altsyncram:altsyncram_component|           ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_i5v1:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated ; altsyncram_i5v1     ; work         ;
 ;    |clock_divider:clk_2|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|clock_divider:clk_2                                                         ; clock_divider       ; work         ;
 ;    |frecuency_generator:f_640x480|                ; 37 (37)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|frecuency_generator:f_640x480                                               ; frecuency_generator ; work         ;
-;    |print:print_1|                                ; 302 (302)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
-;    |rom_1:rom_1|                                  ; 44 (44)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
+;    |print:print_1|                                ; 310 (310)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
+;    |rom_1:rom_1|                                  ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
 ;    |top:keyb|                                     ; 374 (32)            ; 400 (20)                  ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb                                                                    ; top                 ; work         ;
-;       |KeyFsm:inst_KeyFsm|                        ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|KeyFsm:inst_KeyFsm                                                 ; KeyFsm              ; work         ;
-;       |LCD:lm|                                    ; 169 (156)           ; 37 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm                                                             ; LCD                 ; work         ;
+;       |KeyFsm:inst_KeyFsm|                        ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|KeyFsm:inst_KeyFsm                                                 ; KeyFsm              ; work         ;
+;       |LCD:lm|                                    ; 168 (155)           ; 37 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm                                                             ; LCD                 ; work         ;
 ;          |LCD_Controller:u0|                      ; 13 (13)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0                                           ; LCD_Controller      ; work         ;
-;       |key2lcd:inst_key2lcd|                      ; 51 (51)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|key2lcd:inst_key2lcd                                               ; key2lcd             ; work         ;
-;       |keyboard:inst_keyboard|                    ; 65 (63)             ; 49 (47)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|keyboard:inst_keyboard                                             ; keyboard            ; work         ;
+;       |key2lcd:inst_key2lcd|                      ; 50 (50)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|key2lcd:inst_key2lcd                                               ; key2lcd             ; work         ;
+;       |keyboard:inst_keyboard|                    ; 64 (62)             ; 49 (47)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|keyboard:inst_keyboard                                             ; keyboard            ; work         ;
 ;          |posEdgeGenerator:inst_posEdgeGenerator| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|keyboard:inst_keyboard|posEdgeGenerator:inst_posEdgeGenerator      ; posEdgeGenerator    ; work         ;
 ;       |memory:mem1|                               ; 22 (22)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem1                                                        ; memory              ; work         ;
 ;       |memory:mem2|                               ; 26 (26)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem2                                                        ; memory              ; work         ;
 ;       |posEdgeGenerator:inst_posEdgeGenerator|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|posEdgeGenerator:inst_posEdgeGenerator                             ; posEdgeGenerator    ; work         ;
-;    |write:write|                                  ; 78 (78)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
+;    |write:write|                                  ; 105 (105)           ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1874,7 +1874,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][31]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][32]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][33]                     ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][34]                     ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][34]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][35]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][36]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][37]                     ; Stuck at VCC due to stuck port data_in ;
@@ -1884,7 +1884,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][41]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][42]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][43]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][44]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][44]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][45]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][46]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][47]                     ; Stuck at GND due to stuck port data_in ;
@@ -1892,7 +1892,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][49]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][50]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][51]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][52]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][52]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][53]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][54]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][55]                     ; Stuck at GND due to stuck port data_in ;
@@ -1901,14 +1901,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][58]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][59]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][60]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][61]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][61]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][62]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][63]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][64]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][65]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][66]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][67]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][68]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][68]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][69]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][70]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][71]                     ; Stuck at GND due to stuck port data_in ;
@@ -1924,7 +1924,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][81]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][82]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][83]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][84]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][84]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][85]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][86]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][87]                     ; Stuck at GND due to stuck port data_in ;
@@ -1933,14 +1933,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][90]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][91]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][92]                     ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][93]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][94]                     ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][93]                     ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][94]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][95]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][96]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][97]                     ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][98]                     ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][99]                     ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][100]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][100]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][101]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][102]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][103]                    ; Stuck at GND due to stuck port data_in ;
@@ -1949,14 +1949,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][106]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][107]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][108]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][109]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][110]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][109]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][110]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][111]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][112]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][113]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][114]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][115]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][116]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][116]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][117]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][118]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][119]                    ; Stuck at GND due to stuck port data_in ;
@@ -1965,14 +1965,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][122]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][123]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][124]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][125]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][126]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][125]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][126]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][127]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][128]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][129]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][130]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][131]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][132]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][132]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][133]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][134]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][135]                    ; Stuck at GND due to stuck port data_in ;
@@ -1981,14 +1981,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][138]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][139]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][140]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][141]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][142]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][141]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][142]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][143]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][144]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][145]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][146]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][147]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][148]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][148]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][149]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][150]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][151]                    ; Stuck at GND due to stuck port data_in ;
@@ -1997,14 +1997,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][154]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][155]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][156]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][157]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][158]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][157]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][158]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][159]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][160]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][161]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][162]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][163]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][164]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][164]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][165]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][166]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][167]                    ; Stuck at GND due to stuck port data_in ;
@@ -2013,14 +2013,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][170]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][171]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][172]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][173]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][174]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][173]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][174]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][175]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][176]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][177]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][178]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][179]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][180]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][180]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][181]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][182]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][183]                    ; Stuck at GND due to stuck port data_in ;
@@ -2029,14 +2029,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][186]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][187]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][188]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][189]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][190]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][189]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][190]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][191]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][192]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][193]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][194]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][195]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][196]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][196]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][197]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][198]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][199]                    ; Stuck at GND due to stuck port data_in ;
@@ -2045,14 +2045,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][202]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][203]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][204]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][205]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][206]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][205]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][206]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][207]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][208]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][209]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][210]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][211]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][212]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][212]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][213]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][214]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][215]                    ; Stuck at GND due to stuck port data_in ;
@@ -2060,23 +2060,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][217]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][218]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][219]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][220]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][221]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][220]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][221]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][222]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][223]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][224]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][225]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][226]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][227]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][228]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][228]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][229]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][230]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][231]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][232]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][233]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][234]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][235]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][236]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][235]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][236]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][237]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][238]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][239]                    ; Stuck at GND due to stuck port data_in ;
@@ -2085,13 +2085,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][242]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][243]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][244]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][245]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][246]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][247]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][248]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][249]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][250]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][251]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][245]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][246]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][247]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][248]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][249]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][250]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][251]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][252]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][253]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][254]                    ; Stuck at GND due to stuck port data_in ;
@@ -2101,13 +2101,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][258]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][259]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][260]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][261]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][262]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][263]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][264]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][265]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][266]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][267]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][261]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][262]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][263]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][264]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][265]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][266]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][267]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][268]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][269]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][270]                    ; Stuck at GND due to stuck port data_in ;
@@ -2116,15 +2116,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][273]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][274]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][275]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][276]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][276]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][277]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][278]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][279]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][280]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][281]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][282]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][283]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][284]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][283]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][284]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][285]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][286]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][287]                    ; Stuck at GND due to stuck port data_in ;
@@ -2132,7 +2132,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][289]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][290]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][291]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][292]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][292]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][293]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][294]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][295]                    ; Stuck at GND due to stuck port data_in ;
@@ -2140,15 +2140,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][297]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][298]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][299]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][300]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][301]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][300]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][301]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][302]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][303]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][304]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][305]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][306]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][307]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][308]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][308]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][309]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][310]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][311]                    ; Stuck at GND due to stuck port data_in ;
@@ -2157,14 +2157,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][314]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][315]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][316]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][317]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][318]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][317]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][318]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][319]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][320]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][321]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][322]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][323]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][324]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][324]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][325]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][326]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][327]                    ; Stuck at GND due to stuck port data_in ;
@@ -2173,14 +2173,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][330]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][331]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][332]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][333]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][334]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][333]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][334]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][335]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][336]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][337]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][338]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][339]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][340]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][340]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][341]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][342]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][343]                    ; Stuck at GND due to stuck port data_in ;
@@ -2189,14 +2189,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][346]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][347]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][348]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][349]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][350]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][349]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][350]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][351]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][352]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][353]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][354]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][355]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][356]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][356]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][357]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][358]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][359]                    ; Stuck at GND due to stuck port data_in ;
@@ -2205,14 +2205,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][362]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][363]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][364]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][365]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][366]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][365]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][366]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][367]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][368]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][369]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][370]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][371]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][372]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][372]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][373]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][374]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][375]                    ; Stuck at GND due to stuck port data_in ;
@@ -2221,14 +2221,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][378]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][379]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][380]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][381]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][382]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][381]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][382]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][383]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][384]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][385]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][386]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][387]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][388]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][388]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][389]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][390]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][391]                    ; Stuck at GND due to stuck port data_in ;
@@ -2237,14 +2237,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][394]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][395]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][396]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][397]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][398]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][397]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][398]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][399]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][400]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][401]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][402]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][403]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][404]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][404]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][405]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][406]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][407]                    ; Stuck at GND due to stuck port data_in ;
@@ -2253,14 +2253,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][410]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][411]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][412]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][413]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][414]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][413]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][414]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][415]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][416]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][417]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][418]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][419]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][420]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][420]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][421]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][422]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][423]                    ; Stuck at GND due to stuck port data_in ;
@@ -2269,14 +2269,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][426]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][427]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][428]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][429]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][430]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][429]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][430]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][431]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][432]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][433]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][434]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][435]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][436]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][436]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][437]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][438]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][439]                    ; Stuck at GND due to stuck port data_in ;
@@ -2292,7 +2292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][449]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][450]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][451]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][452]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][452]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][453]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][454]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][455]                    ; Stuck at GND due to stuck port data_in ;
@@ -2301,12 +2301,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][458]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][459]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][460]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][461]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][461]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][462]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][463]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][464]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][465]                    ; Stuck at GND due to stuck port data_in ;
-; rom_1:rom_1|rf[3][466]                    ; Stuck at VCC due to stuck port data_in ;
+; rom_1:rom_1|rf[3][466]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][467]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][468]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][469]                    ; Stuck at VCC due to stuck port data_in ;
@@ -2316,7 +2316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[3][473]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][474]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][475]                    ; Stuck at VCC due to stuck port data_in ;
-; rom_1:rom_1|rf[3][476]                    ; Stuck at GND due to stuck port data_in ;
+; rom_1:rom_1|rf[3][476]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][477]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][478]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[3][479]                    ; Stuck at GND due to stuck port data_in ;
@@ -5304,7 +5304,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[9][389]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[9][390]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[9][391]                    ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 13465 ;                                        ;
+; Total Number of Removed Registers = 13977 ;                                        ;
 +-------------------------------------------+----------------------------------------+
 * Table truncated at 5000 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -5324,12 +5324,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 446   ;
-; Number of registers using Synchronous Clear  ; 103   ;
+; Total registers                              ; 447   ;
+; Number of registers using Synchronous Clear  ; 97    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 358   ;
+; Number of registers using Clock Enable       ; 359   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -5339,91 +5339,91 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|x[5]              ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][1]                   ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|x[0]              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][2]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][3]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][3]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][7]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][3]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][5]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][8]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[4][7]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[4][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][3]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][2]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][6]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][6]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][4]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][0]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][2]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][8]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][3]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][1]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][0]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][3]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][2]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][1]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][7]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][8]                  ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][2]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][0]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][2]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][2]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][0]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][4]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][0]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][0]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][3]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][7]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][0]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][3]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][6]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][6]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][4]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[8][1]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[8][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][0]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][8]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][7]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][0]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][1]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][2]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][3]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][6]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][1]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][0]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][6]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][6]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][3]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][5]                  ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |VGA|top:keyb|LCD:lm|Delay[1]                        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|espera[18]      ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|y[4]              ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_2[2]                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_1[0]                           ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |VGA|write:write|wr_data_mem[0]                      ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[3]                             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[8]                             ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|write:write|linea[1]                            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|count[2]        ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|L_Addr[1]                       ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[3]                          ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |VGA|top:keyb|LCD:lm|Delay[16]                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|espera[9]       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|y[8]              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[0]                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[5]                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_2[3]                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_1[3]                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|count[3]        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|L_Addr[2]                       ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |VGA|write:write|wr_data_mem[4]                      ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |VGA|write:write|linea[5]                            ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0|next_state[1] ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|green[7]                          ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[3]                          ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|blue[2]                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|en_addr                         ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|linea[3]                          ;
-; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_RS                            ;
+; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[6]                       ;
 ; 37:1               ; 7 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[0]                       ;
-; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[2]                        ;
-; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[5]                        ;
+; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[1]                        ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[3]                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
@@ -5668,39 +5668,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 446                         ;
+; arriav_ff             ; 447                         ;
 ;     CLR               ; 1                           ;
-;     ENA               ; 306                         ;
-;     ENA SCLR          ; 51                          ;
+;     ENA               ; 313                         ;
+;     ENA SCLR          ; 45                          ;
 ;     ENA SLD           ; 1                           ;
 ;     SCLR              ; 52                          ;
 ;     plain             ; 35                          ;
-; arriav_lcell_comb     ; 839                         ;
-;     arith             ; 106                         ;
-;         1 data inputs ; 94                          ;
-;         2 data inputs ; 9                           ;
+; arriav_lcell_comb     ; 868                         ;
+;     arith             ; 123                         ;
+;         1 data inputs ; 95                          ;
+;         2 data inputs ; 16                          ;
 ;         4 data inputs ; 1                           ;
-;         5 data inputs ; 2                           ;
-;     extend            ; 7                           ;
-;         7 data inputs ; 7                           ;
-;     normal            ; 711                         ;
+;         5 data inputs ; 11                          ;
+;     extend            ; 8                           ;
+;         7 data inputs ; 8                           ;
+;     normal            ; 732                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 58                          ;
-;         4 data inputs ; 120                         ;
-;         5 data inputs ; 172                         ;
-;         6 data inputs ; 316                         ;
-;     shared            ; 15                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 7                           ;
+;         2 data inputs ; 48                          ;
+;         3 data inputs ; 71                          ;
+;         4 data inputs ; 116                         ;
+;         5 data inputs ; 154                         ;
+;         6 data inputs ; 334                         ;
+;     shared            ; 5                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 2                           ;
 ; boundary_port         ; 49                          ;
 ; stratixv_ram_block    ; 5                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.20                        ;
-; Average LUT depth     ; 4.18                        ;
+; Average LUT depth     ; 4.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5709,7 +5707,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -5719,7 +5717,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 28 19:27:07 2017
+    Info: Processing started: Tue Nov 28 21:14:04 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -5727,8 +5725,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file vga_str
     Info (12023): Found entity 1: VGA_stripes File: C:/Users/gerar/Desktop/vga/VGA_stripes.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
     Info (12023): Found entity 1: vga_controller File: C:/Users/gerar/Desktop/vga/vga_controller.sv Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at VGA.sv(60): ignored dangling comma in List of Port Connections File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 60
-Warning (10275): Verilog HDL Module Instantiation warning at VGA.sv(68): ignored dangling comma in List of Port Connections File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 68
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
     Info (12023): Found entity 1: VGA File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
@@ -5792,12 +5788,13 @@ Info (12128): Elaborating entity "key2lcd" for hierarchy "top:keyb|key2lcd:inst_
 Info (12128): Elaborating entity "KeyFsm" for hierarchy "top:keyb|KeyFsm:inst_KeyFsm" File: C:/Users/gerar/Desktop/vga/top.sv Line: 75
 Info (12128): Elaborating entity "write" for hierarchy "write:write" File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 48
 Warning (10036): Verilog HDL or VHDL warning at write.sv(14): object "puntero" assigned a value but never read File: C:/Users/gerar/Desktop/vga/write.sv Line: 14
-Warning (10036): Verilog HDL or VHDL warning at write.sv(15): object "borrar" assigned a value but never read File: C:/Users/gerar/Desktop/vga/write.sv Line: 15
 Warning (10230): Verilog HDL assignment warning at write.sv(11): truncated value with size 32 to match size of target (10) File: C:/Users/gerar/Desktop/vga/write.sv Line: 11
 Warning (10230): Verilog HDL assignment warning at write.sv(24): truncated value with size 32 to match size of target (10) File: C:/Users/gerar/Desktop/vga/write.sv Line: 24
 Warning (10230): Verilog HDL assignment warning at write.sv(51): truncated value with size 32 to match size of target (7) File: C:/Users/gerar/Desktop/vga/write.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at write.sv(63): truncated value with size 32 to match size of target (10) File: C:/Users/gerar/Desktop/vga/write.sv Line: 63
 Warning (10230): Verilog HDL assignment warning at write.sv(67): truncated value with size 32 to match size of target (7) File: C:/Users/gerar/Desktop/vga/write.sv Line: 67
+Warning (10230): Verilog HDL assignment warning at write.sv(86): truncated value with size 32 to match size of target (10) File: C:/Users/gerar/Desktop/vga/write.sv Line: 86
+Warning (10230): Verilog HDL assignment warning at write.sv(90): truncated value with size 32 to match size of target (7) File: C:/Users/gerar/Desktop/vga/write.sv Line: 90
 Info (12128): Elaborating entity "Ram_1" for hierarchy "Ram_1:memory" File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 60
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Ram_1:memory|altsyncram:altsyncram_component" File: C:/Users/gerar/Desktop/vga/Ram_1.v Line: 91
 Info (12130): Elaborated megafunction instantiation "Ram_1:memory|altsyncram:altsyncram_component" File: C:/Users/gerar/Desktop/vga/Ram_1.v Line: 91
@@ -6854,15 +6851,15 @@ Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/gerar/Desktop/vga/output_files/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1180 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1210 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 1126 logic cells
+    Info (21061): Implemented 1156 logic cells
     Info (21064): Implemented 5 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1047 warnings
-    Info: Peak virtual memory: 726 megabytes
-    Info: Processing ended: Tue Nov 28 19:27:33 2017
-    Info: Elapsed time: 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1046 warnings
+    Info: Peak virtual memory: 733 megabytes
+    Info: Processing ended: Tue Nov 28 21:14:31 2017
+    Info: Elapsed time: 00:00:27
     Info: Total CPU time (on all processors): 00:00:44
 
 

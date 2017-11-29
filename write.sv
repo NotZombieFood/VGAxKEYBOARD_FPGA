@@ -52,12 +52,12 @@ always_ff @ (posedge clk) begin
 					else
 						linea <= 1;
 				end
-			/*	else if (teclado == 9'h 108) begin    //Borrar
+				else if (teclado == 9'h 108) begin    //Borrar
 					en_mem <= 1; 
 					wr_data_mem <= 0;
 					borrar <= 1;
 				
-				end*/
+				end
 				else begin
 				if (columna < 41)
 						columna <= columna + 1;
@@ -68,7 +68,7 @@ always_ff @ (posedge clk) begin
 						else 
 							linea <= 1;
 					end
-				if (teclado <26 ) begin
+				if (teclado <27 ) begin
 					en_mem <= 1;
 					wr_data_mem <= teclado;
 				end
@@ -80,7 +80,8 @@ always_ff @ (posedge clk) begin
 		end
 		else begin
 			en_mem <= 0;
-			/*if (borrar) begin
+			if (borrar) begin
+				borrar <= 0;
 				if (columna > 1)
 					columna <= columna - 1;
 				else begin
@@ -91,7 +92,6 @@ always_ff @ (posedge clk) begin
 						linea <= 15;
 				end
 			end
-			*/
 		end
 end
 

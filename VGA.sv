@@ -56,7 +56,7 @@ Ram_1 memory(.clock(clk),
 .rdaddress(rd_address_mem),
 .wraddress(wr_address_mem),
 .wren(en_mem),
-.q(rd_rom),
+.q(rd_rom)
 );
 
 
@@ -64,7 +64,7 @@ rom_1 rom_1(
 .clk(clk),
 .rst(~rst),
 .address(rd_rom),
-.data(mem),
+.data(mem)
 );
 
 
