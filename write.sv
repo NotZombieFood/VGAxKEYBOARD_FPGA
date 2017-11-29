@@ -59,11 +59,11 @@ always_ff @ (posedge clk) begin
 				
 				end
 				else begin
-				if (teclado <38 ) begin
+				if (teclado <74 ) begin
 					if (columna < 41)
 						columna <= columna + 1;
 					else begin
-						columna <= 1;
+						columna <= 2;
 						if (linea < 15) 
 							linea <= linea + 1;
 						else 
