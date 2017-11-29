@@ -59,7 +59,8 @@ always_ff @ (posedge clk) begin
 				
 				end
 				else begin
-				if (columna < 41)
+				if (teclado <38 ) begin
+					if (columna < 41)
 						columna <= columna + 1;
 					else begin
 						columna <= 1;
@@ -68,7 +69,6 @@ always_ff @ (posedge clk) begin
 						else 
 							linea <= 1;
 					end
-				if (teclado <38 ) begin
 					en_mem <= 1;
 					wr_data_mem <= teclado;
 				end

@@ -50,7 +50,7 @@ module keyboard
 						next_state <= read;
 				end
 				DLY: begin
-					if (espera >50000000)
+					if (espera >300000)
 						next_state <= idle;
 					else
 						next_state <= DLY;
