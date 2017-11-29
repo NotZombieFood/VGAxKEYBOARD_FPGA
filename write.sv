@@ -68,7 +68,7 @@ always_ff @ (posedge clk) begin
 						else 
 							linea <= 1;
 					end
-				if (teclado <27 ) begin
+				if (teclado <38 ) begin
 					en_mem <= 1;
 					wr_data_mem <= teclado;
 				end

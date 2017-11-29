@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Tue Nov 28 21:14:31 2017
+Tue Nov 28 21:38:48 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -66,16 +66,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 28 21:14:31 2017       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 28 21:38:48 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGA                                         ;
 ; Top-level Entity Name           ; VGA                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 447                                         ;
+; Total registers                 ; 448                                         ;
 ; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 3,000                                       ;
+; Total block memory bits         ; 3,600                                       ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -229,27 +229,27 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 620       ;
+; Estimate of Logic utilization (ALMs needed) ; 744       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 865       ;
-;     -- 7 input functions                    ; 8         ;
-;     -- 6 input functions                    ; 334       ;
-;     -- 5 input functions                    ; 165       ;
-;     -- 4 input functions                    ; 119       ;
-;     -- <=3 input functions                  ; 239       ;
+; Combinational ALUT usage for logic          ; 983       ;
+;     -- 7 input functions                    ; 15        ;
+;     -- 6 input functions                    ; 457       ;
+;     -- 5 input functions                    ; 179       ;
+;     -- 4 input functions                    ; 127       ;
+;     -- <=3 input functions                  ; 205       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 447       ;
+; Dedicated logic registers                   ; 448       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 49        ;
 ; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 3000      ;
+; Total block memory bits                     ; 3600      ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 431       ;
-; Total fan-out                               ; 5487      ;
-; Average fan-out                             ; 3.88      ;
+; Maximum fan-out                             ; 433       ;
+; Total fan-out                               ; 6297      ;
+; Average fan-out                             ; 4.10      ;
 +---------------------------------------------+-----------+
 
 
@@ -258,15 +258,15 @@ agreement for further details.
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name         ; Library Name ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
-; |VGA                                              ; 865 (0)             ; 447 (0)                   ; 3000              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
-;    |Ram_1:memory|                                 ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory                                                                ; Ram_1               ; work         ;
-;       |altsyncram:altsyncram_component|           ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
-;          |altsyncram_i5v1:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 3000              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated ; altsyncram_i5v1     ; work         ;
+; |VGA                                              ; 983 (0)             ; 448 (0)                   ; 3600              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
+;    |Ram_1:memory|                                 ; 0 (0)               ; 0 (0)                     ; 3600              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory                                                                ; Ram_1               ; work         ;
+;       |altsyncram:altsyncram_component|           ; 0 (0)               ; 0 (0)                     ; 3600              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
+;          |altsyncram_i5v1:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 3600              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated ; altsyncram_i5v1     ; work         ;
 ;    |clock_divider:clk_2|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|clock_divider:clk_2                                                         ; clock_divider       ; work         ;
 ;    |frecuency_generator:f_640x480|                ; 37 (37)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|frecuency_generator:f_640x480                                               ; frecuency_generator ; work         ;
-;    |print:print_1|                                ; 310 (310)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
-;    |rom_1:rom_1|                                  ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
-;    |top:keyb|                                     ; 374 (32)            ; 400 (20)                  ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb                                                                    ; top                 ; work         ;
+;    |print:print_1|                                ; 276 (276)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
+;    |rom_1:rom_1|                                  ; 192 (192)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
+;    |top:keyb|                                     ; 371 (29)            ; 400 (20)                  ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb                                                                    ; top                 ; work         ;
 ;       |KeyFsm:inst_KeyFsm|                        ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|KeyFsm:inst_KeyFsm                                                 ; KeyFsm              ; work         ;
 ;       |LCD:lm|                                    ; 168 (155)           ; 37 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm                                                             ; LCD                 ; work         ;
 ;          |LCD_Controller:u0|                      ; 13 (13)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0                                           ; LCD_Controller      ; work         ;
@@ -276,7 +276,7 @@ agreement for further details.
 ;       |memory:mem1|                               ; 22 (22)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem1                                                        ; memory              ; work         ;
 ;       |memory:mem2|                               ; 26 (26)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem2                                                        ; memory              ; work         ;
 ;       |posEdgeGenerator:inst_posEdgeGenerator|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|posEdgeGenerator:inst_posEdgeGenerator                             ; posEdgeGenerator    ; work         ;
-;    |write:write|                                  ; 105 (105)           ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
+;    |write:write|                                  ; 106 (106)           ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -5304,7 +5304,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rom_1:rom_1|rf[9][389]                    ; Stuck at GND due to stuck port data_in ;
 ; rom_1:rom_1|rf[9][390]                    ; Stuck at VCC due to stuck port data_in ;
 ; rom_1:rom_1|rf[9][391]                    ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 13977 ;                                        ;
+; Total Number of Removed Registers = 19608 ;                                        ;
 +-------------------------------------------+----------------------------------------+
 * Table truncated at 5000 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -5314,8 +5314,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 ; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                              ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; top:keyb|KeyFsm:inst_KeyFsm|state[31] ; Stuck at GND              ; write:write|wr_data_mem[5], write:write|wr_data_mem[6], write:write|wr_data_mem[7], ;
-;                                       ; due to stuck port data_in ; write:write|wr_data_mem[8], write:write|wr_data_mem[9]                              ;
+; top:keyb|KeyFsm:inst_KeyFsm|state[31] ; Stuck at GND              ; write:write|wr_data_mem[6], write:write|wr_data_mem[7], write:write|wr_data_mem[8], ;
+;                                       ; due to stuck port data_in ; write:write|wr_data_mem[9]                                                          ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -5324,12 +5324,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 447   ;
+; Total registers                              ; 448   ;
 ; Number of registers using Synchronous Clear  ; 97    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 359   ;
+; Number of registers using Clock Enable       ; 360   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -5413,17 +5413,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_1[3]                           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|count[3]        ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|L_Addr[2]                       ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |VGA|write:write|wr_data_mem[4]                      ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |VGA|write:write|wr_data_mem[2]                      ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |VGA|write:write|linea[5]                            ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0|next_state[1] ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[3]                          ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|blue[2]                           ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0|next_state[0] ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[6]                          ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|red[6]                            ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|en_addr                         ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|linea[3]                          ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|linea[2]                          ;
 ; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[6]                       ;
 ; 37:1               ; 7 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[0]                       ;
 ; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[1]                        ;
-; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[3]                        ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[5]                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
@@ -5668,37 +5668,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 447                         ;
+; arriav_ff             ; 448                         ;
 ;     CLR               ; 1                           ;
-;     ENA               ; 313                         ;
+;     ENA               ; 314                         ;
 ;     ENA SCLR          ; 45                          ;
 ;     ENA SLD           ; 1                           ;
 ;     SCLR              ; 52                          ;
 ;     plain             ; 35                          ;
-; arriav_lcell_comb     ; 868                         ;
+; arriav_lcell_comb     ; 986                         ;
 ;     arith             ; 123                         ;
 ;         1 data inputs ; 95                          ;
 ;         2 data inputs ; 16                          ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 11                          ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 732                         ;
+;     extend            ; 15                          ;
+;         7 data inputs ; 15                          ;
+;     normal            ; 843                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 48                          ;
-;         3 data inputs ; 71                          ;
-;         4 data inputs ; 116                         ;
-;         5 data inputs ; 154                         ;
-;         6 data inputs ; 334                         ;
+;         2 data inputs ; 52                          ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 124                         ;
+;         5 data inputs ; 168                         ;
+;         6 data inputs ; 457                         ;
 ;     shared            ; 5                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 2                           ;
 ; boundary_port         ; 49                          ;
-; stratixv_ram_block    ; 5                           ;
+; stratixv_ram_block    ; 6                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.20                        ;
-; Average LUT depth     ; 4.36                        ;
+; Max LUT depth         ; 9.10                        ;
+; Average LUT depth     ; 4.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5707,7 +5707,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -5717,7 +5717,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 28 21:14:04 2017
+    Info: Processing started: Tue Nov 28 21:38:06 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -6836,7 +6836,6 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "wr_data_mem[10]" is missing source, defaulting to GND File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 32
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[5]" File: C:/Users/gerar/Desktop/vga/db/altsyncram_i5v1.tdf Line: 194
         Warning (14320): Synthesized away node "Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[6]" File: C:/Users/gerar/Desktop/vga/db/altsyncram_i5v1.tdf Line: 225
         Warning (14320): Synthesized away node "Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[7]" File: C:/Users/gerar/Desktop/vga/db/altsyncram_i5v1.tdf Line: 256
         Warning (14320): Synthesized away node "Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[8]" File: C:/Users/gerar/Desktop/vga/db/altsyncram_i5v1.tdf Line: 287
@@ -6847,20 +6846,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "RW" is stuck at GND File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 16
     Warning (13410): Pin "ON" is stuck at VCC File: C:/Users/gerar/Desktop/vga/VGA.sv Line: 17
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/gerar/Desktop/vga/output_files/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1210 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1328 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 1156 logic cells
-    Info (21064): Implemented 5 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1046 warnings
-    Info: Peak virtual memory: 733 megabytes
-    Info: Processing ended: Tue Nov 28 21:14:31 2017
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:44
+    Info (21061): Implemented 1273 logic cells
+    Info (21064): Implemented 6 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1045 warnings
+    Info: Peak virtual memory: 796 megabytes
+    Info: Processing ended: Tue Nov 28 21:38:48 2017
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:01:04
 
 
 +------------------------------------------+

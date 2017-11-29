@@ -103,17 +103,17 @@ always_comb begin
 			8'h22: lcd_code = 24;   // x
 			8'h35: lcd_code = 25;   // y
 			8'h1a: lcd_code = 26;   // z
-			8'h0e: lcd_code = 27;   // `
-			8'h4e: lcd_code = 28;   // -
-			8'h55: lcd_code = 29;   // =
-			8'h54: lcd_code = 30;   // [
-			8'h5b: lcd_code = 31;   // ]
-			8'h5d: lcd_code = 32;   // \
-			8'h4c: lcd_code = 33;   // ;
-			8'h52: lcd_code = 34;   // '
-			8'h41: lcd_code = 35;   // ,
-			8'h49: lcd_code = 36;   // .
-			8'h4a: lcd_code = 37;   // /
+			8'h0e: lcd_code = 9'h160;   // `
+			8'h4e: lcd_code = 9'h12D;   // -
+			8'h55: lcd_code = 9'h13D;   // =
+			8'h54: lcd_code = 9'h15B;   // [
+			8'h5b: lcd_code = 9'h15D;   // ]
+			8'h5d: lcd_code = 9'h15C;   // \
+			8'h4c: lcd_code = 9'h13B;   // ;
+			8'h52: lcd_code = 9'h127;   // '
+			8'h41: lcd_code = 9'h12C;   // ,
+			8'h49: lcd_code = 9'h12E;   // .
+			8'h4a: lcd_code = 9'h12F;   // /
 			8'h29: lcd_code = 0;   // space
 			8'h5a: lcd_code = 9'h0C0;  // enter
 			8'h66: lcd_code = 9'h108;   // backspace
