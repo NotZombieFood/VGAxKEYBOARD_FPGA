@@ -114,7 +114,7 @@ always_comb begin
 			8'h41: lcd_code = 35;   // ,
 			8'h49: lcd_code = 36;   // .
 			8'h4a: lcd_code = 37;   // /
-			8'h29: lcd_code = 9'h120;   // space
+			8'h29: lcd_code = 0;   // space
 			8'h5a: lcd_code = 9'h0C0;   // enter (jumpline)
 			8'h66: lcd_code = 9'h108;   // backspace
 			8'h0D: lcd_code = 9'h109;   // horizontal tab	

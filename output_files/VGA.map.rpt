@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Wed Nov 29 00:01:51 2017
+Wed Nov 29 08:34:21 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 29 00:01:51 2017       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 29 08:34:21 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGA                                         ;
 ; Top-level Entity Name           ; VGA                                         ;
@@ -229,14 +229,14 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                              ;
 +---------------------------------------------+------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1095                                                                               ;
+; Estimate of Logic utilization (ALMs needed) ; 1058                                                                               ;
 ;                                             ;                                                                                    ;
-; Combinational ALUT usage for logic          ; 1493                                                                               ;
-;     -- 7 input functions                    ; 23                                                                                 ;
-;     -- 6 input functions                    ; 642                                                                                ;
-;     -- 5 input functions                    ; 296                                                                                ;
-;     -- 4 input functions                    ; 221                                                                                ;
-;     -- <=3 input functions                  ; 311                                                                                ;
+; Combinational ALUT usage for logic          ; 1495                                                                               ;
+;     -- 7 input functions                    ; 20                                                                                 ;
+;     -- 6 input functions                    ; 569                                                                                ;
+;     -- 5 input functions                    ; 393                                                                                ;
+;     -- 4 input functions                    ; 225                                                                                ;
+;     -- <=3 input functions                  ; 288                                                                                ;
 ;                                             ;                                                                                    ;
 ; Dedicated logic registers                   ; 449                                                                                ;
 ;                                             ;                                                                                    ;
@@ -246,10 +246,10 @@ agreement for further details.
 ;                                             ;                                                                                    ;
 ; Total DSP Blocks                            ; 0                                                                                  ;
 ;                                             ;                                                                                    ;
-; Maximum fan-out node                        ; Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[1] ;
-; Maximum fan-out                             ; 468                                                                                ;
-; Total fan-out                               ; 8763                                                                               ;
-; Average fan-out                             ; 4.28                                                                               ;
+; Maximum fan-out node                        ; Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated|q_b[0] ;
+; Maximum fan-out                             ; 463                                                                                ;
+; Total fan-out                               ; 8727                                                                               ;
+; Average fan-out                             ; 4.26                                                                               ;
 +---------------------------------------------+------------------------------------------------------------------------------------+
 
 
@@ -258,25 +258,25 @@ agreement for further details.
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name         ; Library Name ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
-; |VGA                                              ; 1493 (0)            ; 449 (0)                   ; 4200              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
+; |VGA                                              ; 1495 (0)            ; 449 (0)                   ; 4200              ; 0          ; 49   ; 0            ; |VGA                                                                             ; VGA                 ; work         ;
 ;    |Ram_1:memory|                                 ; 0 (0)               ; 0 (0)                     ; 4200              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory                                                                ; Ram_1               ; work         ;
 ;       |altsyncram:altsyncram_component|           ; 0 (0)               ; 0 (0)                     ; 4200              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_i5v1:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 4200              ; 0          ; 0    ; 0            ; |VGA|Ram_1:memory|altsyncram:altsyncram_component|altsyncram_i5v1:auto_generated ; altsyncram_i5v1     ; work         ;
 ;    |clock_divider:clk_2|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|clock_divider:clk_2                                                         ; clock_divider       ; work         ;
 ;    |frecuency_generator:f_640x480|                ; 37 (37)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|frecuency_generator:f_640x480                                               ; frecuency_generator ; work         ;
-;    |print:print_1|                                ; 347 (347)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
-;    |rom_1:rom_1|                                  ; 630 (630)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
-;    |top:keyb|                                     ; 371 (31)            ; 400 (20)                  ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb                                                                    ; top                 ; work         ;
-;       |KeyFsm:inst_KeyFsm|                        ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|KeyFsm:inst_KeyFsm                                                 ; KeyFsm              ; work         ;
+;    |print:print_1|                                ; 329 (329)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|print:print_1                                                               ; print               ; work         ;
+;    |rom_1:rom_1|                                  ; 649 (649)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|rom_1:rom_1                                                                 ; rom_1               ; work         ;
+;    |top:keyb|                                     ; 367 (31)            ; 400 (20)                  ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb                                                                    ; top                 ; work         ;
+;       |KeyFsm:inst_KeyFsm|                        ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|KeyFsm:inst_KeyFsm                                                 ; KeyFsm              ; work         ;
 ;       |LCD:lm|                                    ; 168 (155)           ; 37 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm                                                             ; LCD                 ; work         ;
 ;          |LCD_Controller:u0|                      ; 13 (13)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0                                           ; LCD_Controller      ; work         ;
-;       |key2lcd:inst_key2lcd|                      ; 49 (49)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|key2lcd:inst_key2lcd                                               ; key2lcd             ; work         ;
+;       |key2lcd:inst_key2lcd|                      ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|key2lcd:inst_key2lcd                                               ; key2lcd             ; work         ;
 ;       |keyboard:inst_keyboard|                    ; 64 (62)             ; 49 (47)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|keyboard:inst_keyboard                                             ; keyboard            ; work         ;
 ;          |posEdgeGenerator:inst_posEdgeGenerator| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|keyboard:inst_keyboard|posEdgeGenerator:inst_posEdgeGenerator      ; posEdgeGenerator    ; work         ;
 ;       |memory:mem1|                               ; 22 (22)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem1                                                        ; memory              ; work         ;
 ;       |memory:mem2|                               ; 26 (26)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|memory:mem2                                                        ; memory              ; work         ;
 ;       |posEdgeGenerator:inst_posEdgeGenerator|    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |VGA|top:keyb|posEdgeGenerator:inst_posEdgeGenerator                             ; posEdgeGenerator    ; work         ;
-;    |write:write|                                  ; 107 (107)           ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
+;    |write:write|                                  ; 112 (112)           ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|write:write                                                                 ; write               ; work         ;
 +---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -5340,90 +5340,90 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 ; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|x[6]              ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][4]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[0][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][0]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][4]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][1]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[1][8]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][7]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[2][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][0]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][4]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[3][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[4][6]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[4][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[4][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][1]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][6]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[5][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[6][8]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][7]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][4]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][8]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[7][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][0]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[8][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][6]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[9][5]                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][7]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][3]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][4]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][8]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[10][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][2]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[11][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][7]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[12][5]                  ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][7]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[13][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][6]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][0]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[14][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][2]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][7]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem2|rf[15][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][1]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][2]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][6]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][4]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[0][8]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][6]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[1][5]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][4]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[2][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][1]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][3]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[3][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][2]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][0]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[4][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][2]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][0]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[5][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][2]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][7]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[6][8]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][0]                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[8][2]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][7]                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[7][8]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[8][7]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[8][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][2]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][0]                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[9][5]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][6]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][4]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][7]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[10][5]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][6]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[11][8]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][0]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][4]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][0]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][2]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[12][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][1]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[13][8]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][2]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[14][5]                  ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][6]                  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][4]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA|top:keyb|memory:mem1|rf[15][8]                  ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |VGA|top:keyb|LCD:lm|Delay[11]                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|espera[5]       ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|y[5]              ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[3]                             ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |VGA|top:keyb|LCD:lm|Delay[6]                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|espera[23]      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |VGA|frecuency_generator:f_640x480|y[6]              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[0]                             ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_data[5]                             ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_2[3]                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_1[3]                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_2[0]                           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|wr_addr_1[0]                           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA|top:keyb|keyboard:inst_keyboard|count[0]        ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|L_Addr[1]                       ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |VGA|write:write|wr_data_mem[4]                      ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |VGA|write:write|linea[1]                            ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0|next_state[1] ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[4]                          ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|blue[0]                           ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|L_Addr[5]                       ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |VGA|write:write|wr_data_mem[2]                      ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |VGA|write:write|linea[5]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA|top:keyb|LCD:lm|LCD_Controller:u0|next_state[0] ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |VGA|write:write|columna[9]                          ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|blue[1]                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|en_addr                         ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|linea[3]                          ;
-; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_RS                            ;
-; 37:1               ; 7 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[0]                       ;
-; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[2]                        ;
-; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[5]                        ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|linea[2]                          ;
+; 37:1               ; 2 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[6]                       ;
+; 37:1               ; 7 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |VGA|top:keyb|LCD:lm|c_DATA[4]                       ;
+; 38:1               ; 2 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[1]                        ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |VGA|print:print_1|columna[3]                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
@@ -5675,29 +5675,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 1                           ;
 ;     SCLR              ; 52                          ;
 ;     plain             ; 35                          ;
-; arriav_lcell_comb     ; 1496                        ;
+; arriav_lcell_comb     ; 1498                        ;
 ;     arith             ; 123                         ;
 ;         1 data inputs ; 95                          ;
 ;         2 data inputs ; 16                          ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 11                          ;
-;     extend            ; 23                          ;
-;         7 data inputs ; 23                          ;
-;     normal            ; 1345                        ;
+;     extend            ; 20                          ;
+;         7 data inputs ; 20                          ;
+;     normal            ; 1350                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 133                         ;
-;         4 data inputs ; 218                         ;
-;         5 data inputs ; 285                         ;
-;         6 data inputs ; 642                         ;
+;         2 data inputs ; 67                          ;
+;         3 data inputs ; 101                         ;
+;         4 data inputs ; 222                         ;
+;         5 data inputs ; 382                         ;
+;         6 data inputs ; 569                         ;
 ;     shared            ; 5                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 2                           ;
 ; boundary_port         ; 49                          ;
 ; stratixv_ram_block    ; 7                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.10                       ;
+; Max LUT depth         ; 10.00                       ;
 ; Average LUT depth     ; 5.33                        ;
 +-----------------------+-----------------------------+
 
@@ -5707,7 +5707,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:22     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -5717,7 +5717,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 29 00:00:54 2017
+    Info: Processing started: Wed Nov 29 08:33:42 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -6849,16 +6849,16 @@ Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/gerar/Desktop/vga/output_files/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1840 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1842 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 1784 logic cells
+    Info (21061): Implemented 1786 logic cells
     Info (21064): Implemented 7 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1044 warnings
-    Info: Peak virtual memory: 843 megabytes
-    Info: Processing ended: Wed Nov 29 00:01:51 2017
-    Info: Elapsed time: 00:00:57
-    Info: Total CPU time (on all processors): 00:01:21
+    Info: Peak virtual memory: 784 megabytes
+    Info: Processing ended: Wed Nov 29 08:34:21 2017
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:55
 
 
 +------------------------------------------+
